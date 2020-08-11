@@ -1,4 +1,4 @@
-This repo has two projects
+This repo has following projects in it
 
-  1. Health care analysis
-  2. Comcast customer complaints analysis
+  1. Health care analysis (Using R)
+  2. Comcast customer complaints analysis(using R)
