@@ -54,6 +54,7 @@ max_val=df.select("age").rdd.max()[0]
 min_val=df.select("age").rdd.min()[0]
 
 from pyspark.sql.functions import mean as _mean, col
+#PUSH TEST
 
 df_stats = df.select(
     _mean(col('age')).alias('mean'),
