@@ -5,13 +5,16 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 from config import Config
+import shutil
 
 np.random.seed(Config.RANDOM_SEED)
 
 Config.ORIGINAL_DATASET_FILE_PATH.parent.mkdir(parents=True, exist_ok=True)
 Config.DATASET_PATH.mkdir(parents=True, exist_ok=True)
 
-link="https://drive.google.com/file/d/1IpRgVq62muk2cJ0e_a7hS8_fOQePE7kl/view?usp=sharing"
+link="D:/Python/udemy_courses.csv"
+dest="../assets/original_dataset"
+shutil.move(link,dest)
 # gdown.download(
 #     link,
 #     str(Config.ORIGINAL_DATASET_FILE_PATH),
